@@ -1,0 +1,16 @@
+#root {
+    .accordion {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        margin-bottom: 20px;
+        .card {
+            .card-header {
+                img {
+                    max-width: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

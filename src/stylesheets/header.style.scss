@@ -1,0 +1,129 @@
+@import "./variables.scss";
+
+// @keyframes gradientBG {
+// 	0% {
+// 		background-position: 0% 50%;
+// 	}
+// 	50% {
+// 		background-position: 100% 50%;
+// 	}
+// 	100% {
+// 		background-position: 0% 50%;
+// 	}
+// }
+
+body {
+    #root {
+        .jumbotron {
+            display: flex;
+            min-width: 100%;
+            margin-bottom: 0px;
+            color: #fff;
+            // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background: url(../assets/images/fabio-3CDMAw6Y4DU-unsplash.jpg);
+            background-size: cover;
+            background-position: center bottom;
+            // animation: gradientBG 15s ease infinite;
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.582);
+            padding: 0px;
+            position: relative;
+            z-index: 2;
+            .container {
+                display: flex;
+                height: 200px;
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+                max-width: none;
+                #left {
+                    // background-color: yellow;
+                    height: 100%;
+                    width: 50%;
+                    // position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    transition: ease-in-out 0.7s;
+                    h2 {
+                        font-family: 'Noto Serif', serif;
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        margin: 0px;
+                        padding-right: 20px;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        text-align: right;
+                        transition: ease-in-out 0.7s;
+                        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.582);
+                    }
+                    h3 {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0px;
+                        font-size: 1.2em;
+                        padding-right: 20px;
+                        justify-content: flex-end;
+                        align-items: center;
+                        text-align: right;
+                        transition: ease-in-out 0.7s;
+                        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.582);
+                    }
+                    &:hover {
+                        width: 70%;
+                        h2 {
+                            font-size: 60px;
+                            padding-right: 10px;
+                        }
+                        h3 {
+                            height: 50%;
+                        }
+                    }
+                }
+                #right {
+                    background-color: $five;
+                    height: 100%;
+                    width: 50%;
+                    // position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    transition: ease-in-out 0.7s;
+                    h2 {
+                        font-family: 'Noto Serif', serif;
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        margin: 0px;
+                        align-items: flex-end;
+                        padding-left: 20px;
+                        justify-content: flex-start;
+                        text-align: left;
+                        transition: ease-in-out 0.7s;
+                        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.582);
+                    }
+                    h3 {
+                        font-size: 1.2em;
+                        width: 100%;
+                        height: 100%;
+                        margin: 0px;
+                        align-items: center;
+                        padding-left: 20px;
+                        justify-content: flex-start;
+                        text-align: left;
+                        transition: ease-in-out 0.7s;
+                        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.582);
+                    }
+                    &:hover {
+                        width: 70%;
+                        h2 {
+                            font-size: 60px;
+                            padding-left: 10px;
+                        }
+                        h3 {
+                            height: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

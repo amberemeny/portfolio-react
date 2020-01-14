@@ -1,0 +1,53 @@
+#root {
+    #aboutMe {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column;
+        align-items: center;
+        // background-color: rgb(171, 176, 182);
+        #image {
+            margin: 10px;
+            min-height: 200px;
+            min-width: 200px;
+            background-image: url(https://pbs.twimg.com/media/EEVMVa4VUAIRiF7?format=jpg&name=4096x4096);
+            background-size: cover;
+            background-position: center;
+            border-radius: 100px;
+            position: relative;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.582);
+            &:after {
+                content: '';
+                display: block;
+                padding-bottom: 100%;
+            }
+        }
+        #rightText {
+            max-width: 90%;
+            background-color: $one;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0px 10px 10px 10px;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.582);
+            p {
+                margin: 0px;
+                background-color: white;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.459);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #root {
+        #aboutMe {
+            flex-direction: row;
+            justify-content: center;
+            #rightText {
+                margin-top: 10px;
+                max-width: 600px;
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@import "../stylesheets/variables.scss";
+
+body {
+    #root {
+        h1 {
+            font-family: 'Noto Serif', serif;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2em;
+            font-weight: bold;
+            margin: 5px;
+        }
+        .carousel {
+            border-top: 10px solid $one;
+            margin-top: 10px;
+            .carousel-control-next {
+                .carousel-control-next-icon {
+                    background-color: $one;
+                    border-radius: 10px;
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+                }
+            }
+            .carousel-control-prev {
+                .carousel-control-prev-icon {
+                    background-color: $one;
+                    border-radius: 10px;
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+                }
+            }
+            ol {
+                margin: 0px;
+            }
+            .carousel-indicators {
+                background-color: $one;
+                width: 100%;
+                left: 0%;
+                right: 0%;  
+                padding-bottom: 5px;  
+                
+            }
+            .carousel-item {
+                height: 400px;
+                background-color: $one;
+                overflow: hidden;
+                .carousel-caption {
+                    background-color: $one;
+                    width: 100%;
+                    left: 0%;
+                    right: 0%;
+                    padding-top: 10px;
+                    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.596);
+                    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.582);
+                }
+            }
+            #item1 {
+                background: url(../assets/images/chopdropdesktop.png) no-repeat 50% 50%;
+                background-size: fill;
+                background-position: center top;
+            }
+            #item2 {
+                background: url(../assets/images/listings-mylistings.png) no-repeat 50% 50%;
+                background-size: fill;
+                background-position: center top;
+            }
+            #item3 {
+                background: url(../assets/images//in_game_manual.png) no-repeat 50% 50%;
+                background-size: fill;
+                background-position: center 30%;
+            }
+        }
+    }
+}
